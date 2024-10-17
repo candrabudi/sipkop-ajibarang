@@ -22,186 +22,42 @@
             </a>
         </li>
         <li>
-            <a href="javascript:;" class="side-menu">
+            <a href="{{ route('savings.list') }}" class="side-menu">
                 <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shopping-cart" class="lucide lucide-shopping-cart stroke-1.5 w-5 h-5 mx-auto block"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text mx-auto"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
                 </div>
                 <div class="side-menu__title">
-                    Transaksi
-                    <div class="side-menu__sub-icon ">
-                        <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
-                    </div>
-                </div>
-            </a>
-            <ul class="">
-                <li>
-                    <a href="{{ route('deposit.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Deposit
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('withdraw.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Withdraw
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="enigma-side-menu-crud-form-page.html" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Bonus
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="javascript:;" class="side-menu">
-                <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open stroke-1.5 w-5 h-5 mx-auto block"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                </div>
-                <div class="side-menu__title">
-                    Promosi
-                    <div class="side-menu__sub-icon ">
-                        <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
-                    </div>
-                </div>
-            </a>
-            <ul class="">
-                <li>
-                    <a href="{{ route('bannerpromotion.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Banner Promosi
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('promotion.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Promosi
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <li class="side-nav__divider my-6"></li>
-        <li>
-            <a href="javascript:;" class="side-menu">
-                <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bar-chart2" class="lucide lucide-bar-chart2 stroke-1.5 w-5 h-5 mx-auto block"><line x1="18" x2="18" y1="20" y2="10"></line><line x1="12" x2="12" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="14"></line></svg>
-                </div>
-                <div class="side-menu__title">
-                    Pembayaran
-                    <div class="side-menu__sub-icon ">
-                        <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
-                    </div>
-                </div>
-            </a>
-            <ul class="">
-                <li>
-                    <a href="{{ route('paymentaccount.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Akun Pembayaran
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('payment.list') }}" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Pembayaran
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="javascript:;" class="side-menu">
-                <div class="side-menu__icon">
-                    <i data-tw-merge="" data-lucide="edit" class="stroke-1.5 w-5 h-5"></i>
-                </div>
-                <div class="side-menu__title">
-                    BO
-                    <div class="side-menu__sub-icon ">
-                        <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
-                    </div>
-                </div>
-            </a>
-            <ul class="">
-                <li>
-                    <a href="enigma-side-menu-crud-data-list-page.html" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Provider
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="enigma-side-menu-crud-form-page.html" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Game
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="enigma-side-menu-crud-form-page.html" class="side-menu">
-                        <div class="side-menu__icon">
-                            <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
-                        </div>
-                        <div class="side-menu__title">
-                            Tipe Game
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="enigma-side-menu-inbox-page.html" class="side-menu">
-                <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="key" class="lucide lucide-key stroke-1.5 w-5 h-5 mx-auto block"><circle cx="7.5" cy="15.5" r="5.5"></circle><path d="m21 2-9.6 9.6"></path><path d="m15.5 7.5 3 3L22 7l-3-3"></path></svg>
-                </div>
-                <div class="side-menu__title">
-                    API
+                    Tabungan
                 </div>
             </a>
         </li>
-
         <li>
-            <a href="{{ route('setting.general') }}" class="side-menu">
+            <a href="{{ route('loans.list') }}" class="side-menu">
                 <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" class="lucide lucide-layers stroke-1.5 w-5 h-5 mx-auto block"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book mx-auto"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
                 </div>
                 <div class="side-menu__title">
-                    Pengaturan
+                    Pinjaman
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="side-menu">
+                <div class="side-menu__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book mx-auto"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </div>
+                <div class="side-menu__title">
+                    Angsuran
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="" class="side-menu">
+                <div class="side-menu__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive mx-auto"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
+                </div>
+                <div class="side-menu__title">
+                    Pembayaran Pinjaman
                 </div>
             </a>
         </li>

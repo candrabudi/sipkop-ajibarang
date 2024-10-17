@@ -14,22 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::create([
-            'username' => 'lawrenadmin',
-            'email' => 'lawrenadmin@lwa.com',
-            'role' => 'admin',
-            'password'=> bcrypt('@123Same'),
-            'is_active' => 1,
-        ]);
-
-        GeneralSetting::insert([
-            [
-                'web_name' => 'Example Site 1',
-                'web_description' => 'This is a description for Example Site 1.',
-                'web_logo_url' => 'https://example.com/logo1.png',
-                'web_favicon_url' => 'https://example.com/favicon1.ico',
-                'web_url' => 'https://example.com',
-                'web_status' => 1,
-            ],
-        ]);        
+            'username' => 'admin',
+            'name' => 'Admin SipKop',
+            'level' => 'admin',
+            'password'=> bcrypt('admin'),
+            'photo' => '-'
+        ]);     
     }
 }

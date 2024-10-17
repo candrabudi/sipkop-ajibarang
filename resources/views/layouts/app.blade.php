@@ -57,6 +57,15 @@
     <script src="{{ asset('dist/js/themes/enigma.js') }}"></script>
     <script src="{{ asset('dist/js/components/mobile-menu.js') }}"></script>
     <script src="{{ asset('dist/js/components/themes/enigma/top-bar.js') }}"></script>
+    <script>
+        // Initialize Tom Select after the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            new TomSelect('#actorSelect', {
+                placeholder: 'Select your favorite actors',
+                allowEmptyOption: true,
+            });
+        });
+    </script>
     @yield('scripts')
 </body>
 

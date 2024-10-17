@@ -11,8 +11,8 @@
     <meta name="keywords"
         content="admin template, midone Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title>Login - Midone - Tailwind Admin Dashboard Template</title>
-    <link rel="stylesheet" href="css/app.css">
+    <title>Login SipKop</title>
+    <link rel="stylesheet" href="{{ asset('dist/css/app.css') }}">
 </head>
 
 <body>
@@ -22,18 +22,13 @@
             <div class="block grid-cols-2 gap-4 xl:grid">
                 <div class="hidden min-h-screen flex-col xl:flex">
                     <a class="-intro-x flex items-center pt-5" href="#">
-                        <img class="w-6" src="images/logo.svg" alt="Midone - Tailwind Admin Dashboard Template">
-                        <span class="ml-3 text-lg text-white"> Midone </span>
+                        <span class="ml-3 text-lg text-white"> SipKop </span>
                     </a>
                     <div class="my-auto">
-                        <img class="-intro-x -mt-16 w-1/2" src="images/illustration.svg"
+                        <img class="-intro-x -mt-16 w-1/2" src="{{ asset('dist/images/illustration.svg') }}"
                             alt="Midone - Tailwind Admin Dashboard Template">
                         <div class="-intro-x mt-10 text-4xl font-medium leading-tight text-white">
-                            A few more clicks to <br>
-                            sign in to your account.
-                        </div>
-                        <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-slate-400">
-                            Manage all your e-commerce accounts in one place
+                            Hanya beberapa langkah lagi <br> untuk masuk ke akun SIPKOP Anda.
                         </div>
                     </div>
                 </div>
@@ -72,12 +67,12 @@
             </div>
         </div>
     </div>
-    <script src="js/vendors/dom.js"></script>
-    <script src="js/vendors/tailwind-merge.js"></script>
-    <script src="js/vendors/lucide.js"></script>
-    <script src="js/vendors/modal.js"></script>
-    <script src="js/components/base/theme-color.js"></script>
-    <script src="js/components/base/lucide.js"></script>
+    <script src="{{ asset('dist/js/vendors/dom.js') }}"></script>
+    <script src="{{ asset('dist/js/vendors/tailwind-merge.js') }}"></script>
+    <script src="{{ asset('dist/js/vendors/lucide.js') }}"></script>
+    <script src="{{ asset('dist/js/vendors/modal.js') }}"></script>
+    <script src="{{ asset('dist/js/components/base/theme-color.js') }}"></script>
+    <script src="{{ asset('dist/js/components/base/lucide.js') }}"></script>
 </body>
 
 </html>
