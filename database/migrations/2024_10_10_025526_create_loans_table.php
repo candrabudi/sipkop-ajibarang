@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('loans', function (Blueprint $table) {
             $table->id();
+            $table->string('no_trx');
             $table->unsignedBigInteger('member_id');
             $table->unsignedBigInteger('loan_type_id');
             $table->decimal('loan_amount', 15, 2);

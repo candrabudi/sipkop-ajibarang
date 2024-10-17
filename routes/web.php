@@ -57,9 +57,9 @@ Route::middleware('auth')->group(function () {
     // Loans management routes
     Route::prefix('loans')->name('loans.')->group(function () {
         Route::get('/list', [LoanController::class, 'index'])->name('list');
-        Route::get('/create', [LoanController::class, 'create'])->name('create');
-        Route::post('/save', [LoanController::class, 'store'])->name('save');
-        Route::get('/history/{id}', [LoanController::class, 'History'])->name('history');
+        Route::post('/save', [LoanController::class, 'createLoanAndSchedule'])->name('create');
+        Route::get('/schedule/{a}', [LoanController::class, 'showInstallmentSchedule'])->name('showInstallmentSchedule');
+        Route::post('/payment/{id}', [LoanController::class, 'payInstallment'])->name('payInstallment');
         Route::get('/deposit/{id}', [LoanController::class, 'deposit'])->name('deposit');
         Route::post('/deposit/{id}', [LoanController::class, 'depositStore'])->name('deposit.store');
     });

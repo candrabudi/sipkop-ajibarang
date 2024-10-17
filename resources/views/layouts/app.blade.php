@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="admin template, midone Admin Template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="LEFT4CODE">
-    <title>Dashboard - Midone - Tailwind Admin Dashboard Template</title>
+    <title>@yield('title') | SIPKOP</title>
     <link rel="stylesheet" href="{{ asset('dist/css/vendors/tippy.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/vendors/ckeditor.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/vendors/litepicker.css') }}">

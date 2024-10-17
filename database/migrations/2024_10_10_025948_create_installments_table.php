@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('installments', function (Blueprint $table) {
             $table->id();
+            $table->string('no_installment');
             $table->unsignedBigInteger('loan_id');
             $table->integer('installment_number');
             $table->decimal('installment_amount', 15, 2);
             $table->decimal('fine', 15, 2)->nullable();
             $table->decimal('remaining_loan', 15, 2)->nullable();
             $table->date('installment_date')->nullable();
+            $table->integer('is_paid')->default(0);
             $table->timestamps();
         });
     }

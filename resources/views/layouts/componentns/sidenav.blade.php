@@ -41,25 +41,5 @@
                 </div>
             </a>
         </li>
-        <li>
-            <a href="" class="side-menu">
-                <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book mx-auto"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                </div>
-                <div class="side-menu__title">
-                    Angsuran
-                </div>
-            </a>
-        </li>
-        <li>
-            <a href="" class="side-menu">
-                <div class="side-menu__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-archive mx-auto"><polyline points="21 8 21 21 3 21 3 8"></polyline><rect x="1" y="3" width="22" height="5"></rect><line x1="10" y1="12" x2="14" y2="12"></line></svg>
-                </div>
-                <div class="side-menu__title">
-                    Pembayaran Pinjaman
-                </div>
-            </a>
-        </li>
     </ul>
 </nav>
