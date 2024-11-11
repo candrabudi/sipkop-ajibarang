@@ -81,7 +81,7 @@
                             <div class="intro-y col-span-12 sm:col-span-6 xl:col-span-3">
                                 <div class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5 min-h-[500px] h-full">
-                                        <div class="mt-6 text-3xl font-medium leading-8">2.149</div>
+                                        {{-- <div class="mt-6 text-3xl font-medium leading-8">2.149</div> --}}
                                         <div class="mt-1 text-base text-slate-500">
                                             <canvas id="avgInterestRateChart"></canvas>
                                         </div>
@@ -92,7 +92,7 @@
                             <div class="intro-y col-span-12 sm:col-span-6 xl:col-span-3">
                                 <div class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5 min-h-[500px] h-full">
-                                        <div class="mt-6 text-3xl font-medium leading-8">2.149</div>
+                                        {{-- <div class="mt-6 text-3xl font-medium leading-8">2.149</div> --}}
                                         <div class="mt-1 text-base text-slate-500">
                                             <canvas id="installmentStatusChart"></canvas>
                                         </div>
