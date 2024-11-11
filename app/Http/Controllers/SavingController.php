@@ -60,6 +60,7 @@ class SavingController extends Controller
     public function deposit($id)
     {
         $saving = Savings::join('members as m', 'm.id', '=', 'savings.member_id')
+            ->where('savings.member_id', $id)
             ->select('m.name', 'm.phone', 'savings.*')
             ->first();
         return view('savings.edit', compact('saving'));
