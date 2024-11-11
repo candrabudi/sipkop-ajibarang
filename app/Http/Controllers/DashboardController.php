@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Deposit;
 use App\Models\Installment;
 use App\Models\Loan;
+use App\Models\Member;
+use App\Models\Savings;
+use App\Models\Withdrawal;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -12,6 +16,10 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        $totalMember = Member::count();
+        $totalDeposit = Deposit::sum('deposit_amount');
+        $totalWithdraw = Withdrawal::sum('withdrawal_amount');
+        $totalSaving = Savings::sum('amount');
         // Total loans by status
         $loanStatusData = Loan::select('status', DB::raw('count(*) as total'))
             ->groupBy('status')
@@ -40,7 +48,11 @@ class DashboardController extends Controller
             'loanStatusData', 
             'loanTypeData', 
             'avgInterestRateData', 
-            'installmentStatusData'
+            'installmentStatusData',
+            'totalMember',
+            'totalWithdraw',
+            'totalDeposit',
+            'totalSaving'
         ));
     }
 }

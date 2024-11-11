@@ -14,7 +14,7 @@
                                 <div
                                     class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5">
-                                        <div class="mt-6 text-3xl font-medium leading-8">4.710</div>
+                                        <div class="mt-6 text-3xl font-medium leading-8">{{ $totalMember }}</div>
                                         <div class="mt-1 text-base text-slate-500">Total Member</div>
                                     </div>
                                 </div>
@@ -23,7 +23,7 @@
                                 <div
                                     class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5">
-                                        <div class="mt-6 text-3xl font-medium leading-8">3.721</div>
+                                        <div class="mt-6 text-3xl font-medium leading-8">{{ $totalDeposit }}</div>
                                         <div class="mt-1 text-base text-slate-500">Total Deposit</div>
                                     </div>
                                 </div>
@@ -32,7 +32,7 @@
                                 <div
                                     class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5">
-                                        <div class="mt-6 text-3xl font-medium leading-8">2.149</div>
+                                        <div class="mt-6 text-3xl font-medium leading-8">{{ $totalWithdraw }}</div>
                                         <div class="mt-1 text-base text-slate-500">
                                             Total Withdraw
                                         </div>
@@ -43,7 +43,7 @@
                                 <div
                                     class="relative zoom-in before:box before:absolute before:inset-x-3 before:mt-3 before:h-full before:bg-slate-50 before:content-['']">
                                     <div class="box p-5">
-                                        <div class="mt-6 text-3xl font-medium leading-8">152.040</div>
+                                        <div class="mt-6 text-3xl font-medium leading-8">{{ $totalSaving }}</div>
                                         <div class="mt-1 text-base text-slate-500">
                                             Total Tabungan
                                         </div>
