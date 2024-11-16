@@ -12,7 +12,7 @@ class WithdrawController extends Controller
     public function create($a)
     {
         $saving = Savings::join('members as m', 'm.id', '=', 'savings.member_id')
-            ->where('savings.id', $a)
+            ->where('savings.member_id', $a)
             ->select('m.name', 'm.phone', 'savings.*')
             ->first();
         return view('withdrawals.create', compact('saving'));
