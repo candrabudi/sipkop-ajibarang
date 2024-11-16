@@ -79,12 +79,13 @@ class LoanController extends Controller
             ]);
         }
 
-        return response()->json([
-            'message' => 'Loan created and installment schedule generated successfully',
-            'loan' => $loan,
-            'installment_amount' => $installmentAmount,
-            'schedule' => Installment::where('loan_id', $loan->id)->get(),
-        ], 201);
+        // return response()->json([
+        //     'message' => 'Loan created and installment schedule generated successfully',
+        //     'loan' => $loan,
+        //     'installment_amount' => $installmentAmount,
+        //     'schedule' => Installment::where('loan_id', $loan->id)->get(),
+        // ], 201);
+        return redirect()->back();
     }
 
     public function showInstallmentSchedule($loanId)
@@ -110,6 +111,6 @@ class LoanController extends Controller
         $installment->is_paid = true;
         $installment->save();
 
-        return response()->json(['message' => 'Installment paid successfully.']);
+        return redirect()->back();
     }
 }
